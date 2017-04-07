@@ -110,8 +110,11 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 	if (reachability != NULL)
 	{
 		returnValue= [[self alloc] init];
-        returnValue->_reachabilityRef = reachability;
-        returnValue->_alwaysReturnLocalWiFiStatus = NO;
+		if (returnValue != NULL)
+		{
+			returnValue->_reachabilityRef = reachability;
+			returnValue->_alwaysReturnLocalWiFiStatus = NO;
+		}
 	}
 	return returnValue;
 }
@@ -126,8 +129,11 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 	if (reachability != NULL)
 	{
 		returnValue = [[self alloc] init];
-        returnValue->_reachabilityRef = reachability;
-        returnValue->_alwaysReturnLocalWiFiStatus = NO;
+		if (returnValue != NULL)
+		{
+			returnValue->_reachabilityRef = reachability;
+			returnValue->_alwaysReturnLocalWiFiStatus = NO;
+		}
 	}
 	return returnValue;
 }
