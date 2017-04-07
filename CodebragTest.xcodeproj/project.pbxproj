@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48010ED11E9760FF00DA9507 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48010ED01E9760FF00DA9507 /* Reachability.m */; };
 		48E49BAE1E975CB20070F8AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E49BAD1E975CB20070F8AB /* main.m */; };
 		48E49BB11E975CB20070F8AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E49BB01E975CB20070F8AB /* AppDelegate.m */; };
 		48E49BB41E975CB20070F8AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E49BB31E975CB20070F8AB /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48010ECF1E9760FF00DA9507 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = "<group>"; };
+		48010ED01E9760FF00DA9507 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = "<group>"; };
 		48E49BA91E975CB20070F8AB /* CodebragTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodebragTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E49BAD1E975CB20070F8AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48E49BAF1E975CB20070F8AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,9 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48010ED21E97610300DA9507 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				48010ECF1E9760FF00DA9507 /* Reachability.h */,
+				48010ED01E9760FF00DA9507 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		48E49BA01E975CB20070F8AB = {
 			isa = PBXGroup;
 			children = (
+				48010ED21E97610300DA9507 /* Reachability */,
 				48E49BAB1E975CB20070F8AB /* CodebragTest */,
 				48E49BC51E975CB20070F8AB /* CodebragTestTests */,
 				48E49BD01E975CB20070F8AB /* CodebragTestUITests */,
@@ -278,6 +291,7 @@
 			files = (
 				48E49BB41E975CB20070F8AB /* ViewController.m in Sources */,
 				48E49BB11E975CB20070F8AB /* AppDelegate.m in Sources */,
+				48010ED11E9760FF00DA9507 /* Reachability.m in Sources */,
 				48E49BAE1E975CB20070F8AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +532,7 @@
 				48E49BD81E975CB20070F8AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48E49BD91E975CB20070F8AB /* Build configuration list for PBXNativeTarget "CodebragTestTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +541,7 @@
 				48E49BDB1E975CB20070F8AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48E49BDC1E975CB20070F8AB /* Build configuration list for PBXNativeTarget "CodebragTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +550,7 @@
 				48E49BDE1E975CB20070F8AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
